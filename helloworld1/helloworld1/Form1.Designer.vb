@@ -23,6 +23,7 @@ Partial Class helloworld
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnPress = New System.Windows.Forms.Button()
+        Me.txtName = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'btnPress
@@ -38,18 +39,30 @@ Partial Class helloworld
         Me.btnPress.Text = "Press"
         Me.btnPress.UseVisualStyleBackColor = False
         '
+        'txtName
+        '
+        Me.txtName.Font = New System.Drawing.Font("Mongolian Baiti", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtName.Location = New System.Drawing.Point(200, 284)
+        Me.txtName.Multiline = True
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(298, 123)
+        Me.txtName.TabIndex = 1
+        '
         'helloworld
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.HotTrack
         Me.ClientSize = New System.Drawing.Size(689, 598)
+        Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.btnPress)
         Me.Name = "helloworld"
         Me.Text = "hello"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents btnPress As Button
+    Friend WithEvents txtName As TextBox
 End Class
